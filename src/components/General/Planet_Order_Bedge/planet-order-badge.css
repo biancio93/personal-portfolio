@@ -1,0 +1,21 @@
+/* =======================================
+PLANET ORDER CONTAINER
+======================================= */
+
+.planet-order-container{
+    filter: drop-shadow(0px 0px 8px #fff);
+}
+
+.planet-order-element{
+    color: #ffffff7a;
+    background-color: hsl(0deg 0% 45% / 30%);
+    font-family: 'Michroma', sans-serif;
+    font-size: 2em;
+    clip-path: polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));
+    height: 100%;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

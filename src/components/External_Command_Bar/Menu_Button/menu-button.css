@@ -1,0 +1,50 @@
+/* =======================================
+NAVBAR
+======================================= */
+.interface-button {
+  position: fixed;
+  bottom: calc(18vw);
+  z-index: 9999;
+  height: 6vw;
+  width: 6vw;
+  border: 0;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8vw;
+  font-size: 0.7em;
+  max-width: 85px;
+  max-height: 85px;
+  text-align: center;
+  color: white;
+  background-color: var(--background-control-color);
+  box-shadow: 0px 0px 120px var(--soft-shadow-color);
+  cursor: pointer;
+}
+.menu-button{
+  left: 14px;
+}
+
+.help-button {
+  right: 14px;
+}
+
+.interface-button:hover {
+  background-color: var(--light-color)!important;
+}
+.interface-button:hover span{
+  color: var(--primary-color-variant);
+}
+
+.interface-button svg {
+  font-size: 1.3vw;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primary-color-variant);
+}
+
+.interface-button span{
+    padding-top: 5px;
+  }

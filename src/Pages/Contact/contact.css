@@ -1,0 +1,99 @@
+/* =======================================
+ABOUT PAGE
+======================================= */
+
+/* Stile generale */
+  .about-link{
+    color: var(--light-color);
+    display: inline-block;
+    width: 100%;
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+  .about-link svg{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    transition: 0.4s ease-in-out;
+  }
+  .about-link span{
+    max-width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 0.4s ease-in-out;
+  }
+  .about-link:hover{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+  }
+  .about-link:hover svg{
+    color: var(--primary-color-variant);
+    transition: 0.4s ease-in-out;
+  }
+  .contact-social-container{
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+  }
+  .contact-social-container a{
+    padding: 4%;
+    background-color: var(--light-color);
+    display: inline-block;
+    margin-left: 2%;
+    opacity: 0.6;
+    clip-path: polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));
+    color: #68309b;
+    transition: 0.4s ease-in-out;
+    position: relative;
+  }
+  .contact-social-container a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-variant);
+    top: 100%;
+    left: 100%;
+    mix-blend-mode: darken;
+    transition: 0.2s ease-in-out;
+  }
+  .contact-social-container a:hover{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+  }
+  .contact-social-container a:hover:before{
+    top: 0%;
+    left: 0%;
+    transition: 0.2s ease-in-out;
+  }
+  .social-separator{
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background-color: #372644;
+}
+
+/* =======================================
+MEDIA QUERY
+======================================= */
+
+@media (max-width: 801px) {
+  .about-link {
+    margin-bottom: 2em;
+  }
+  .contact-social-container a{
+    margin-left: 5%;
+  }
+  .card-background {
+    display: inline-block;
+  }
+}

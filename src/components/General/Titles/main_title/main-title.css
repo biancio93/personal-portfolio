@@ -1,0 +1,13 @@
+/* =======================================
+MAIN TITLE
+======================================= */
+
+.main-title {
+  color: #fea500;
+  text-shadow: 0px 0px 8px hsla(39, 100%, 50%, 0.72);
+  background: -webkit-linear-gradient(#fea500, #f300fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 5%;
+  opacity: 1;
+}

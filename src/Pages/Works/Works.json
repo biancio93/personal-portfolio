@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Joey_the_Astronaut",
+      "description": "Un progetto personale a cui sono particolarmente legato, la pagina Instagram Joey_the_Astronaut naque un pò per gioco, un pò perchè volevo approfondire e sperimentare le meccaniche di Instagram per generare traffico. Nel tempo mi sono affezionato così tanto all'idea del piccolo astronauta un pò scemo da utilizzarla anche come base per il mio logo.<br/>Alla fine il progetto si è interrotto qualche anno fa, principalmente per mancanza di tempo, lasciandomi in eredità una certa fissazione per l'immaginario spaziale (forse si nota navigando questo sito)",
+      "type": "Illustration",
+      "year": "2018",
+      "link": "https://www.instagram.com/joey_the_astronaut/",
+      "image": "/Portfolio_Images/joey-the-astronaut-portfolio-mockup.png",
+      "altimage": "mockup progetto Instagram Joey the Astronaut"
+    },
+    {
+      "id": 2,
+      "title": "Overplay by Le Arti",
+      "description": "Sito LMS sviluppato insieme a Laura Lavorini di <a href='https://ragou.it/' target='_blank'>Ragou Design</a>.<br/>Il sito è stato realizzato utilizzando come base il CMS WordPress, insieme al plugin <a href='https://www.learndash.com/' target='_blank'>LearnDash</a> per la gestione della sezione di e-learning.<br/>A questa configurazione sono state aggiunte diverse personalizzazioni tramite PHP, volte principalmente ad ampliare le funzionalità dell'area riservata utente (ad esempio è stata aggiunta una sezione dedicata ad ogni studente, generata automaticamente al momento dell'iscrizione, in cui era possibile scambiare messaggi con il docente, sfruttando il sistema dei commenti di WordPress)",
+      "type": "Web Design / Front-End dev",
+      "year": "2021",
+      "link": "https://learti-overplay.it/",
+      "image": "/Portfolio_Images/overplay-by-learti-portfolio-mockup.png",
+      "altimage": "mockup progetto Web Overplay by LeArti"
+    },
+    {
+      "id": 3,
+      "title": "Envi srl",
+      "description": "Sito portfolio sviluppato per ENVI srl, azienda operante nel settore traslochi, insieme a Laura Lavorini di <a href='https://ragou.it/' target='_blank'>Ragou Design</a>.<br/>La parte che mi ha coinvolto principalmente è stata la creazione di una pagina web, in cui gli utenti potessero disegnare velocemente la planimetria della propria abitazione, da inviare poi utilizzando il form di contatto presente sul sito.<br/> La pagina consisteva in un file html, css e js semplici, con l'aggiunta della libreria <a href='https://two.js.org/' target='_blank'>Two.js</a>, per il controllo del disegno. <br/>L'interesse sviluppato per Two.js mi ha portato subito dopo a scoprire il magico mondo di <a href='https://threejs.org/' target='_blank'>Three.js</a>.",
+      "type": "Web Design / Front-End dev",
+      "year": "2021",
+      "link": "https://envisrl.com/disegna-la-tua-planimetria/disegna-la-tua-planimetria.html",
+      "image": "/Portfolio_Images/envi-srl-portfolio-mockup.png",
+      "altimage": "mockup progetto Web Envi"
+    },
+    {
+      "id": 4,
+      "title": "Chimera Sleepwear",
+      "description": "Sito portfolio sviluppato per Chimera Sleepwear, azienda operante nel settore moda, insieme a Laura Lavorini di <a href='https://ragou.it/' target='_blank'>Ragou Design</a>.<br/>La parte che mi ha coinvolto principalmente è stata la configurazione della parte di e-commerce. Quest'esperienza è stata utile e interessante, poichè, nel corso degli anni di collaborazione con il team di Chimera, ha dato modo di osservare e approfondire alcune dinamiche del mondo e-commerce gestite sia internamente da Ragou che tramite professionisti esterni.",
+      "type": "Web Design / e-commerce",
+      "year": "2021",
+      "link": "https://chimerasleepwear.com/",
+      "image": "/Portfolio_Images/chimera-sleepwear-portfolio-mockup.png",
+      "altimage": "mockup progetto Web Chimera Sleepwear"
+      }
+  ]

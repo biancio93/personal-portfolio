@@ -1,0 +1,104 @@
+/* =======================================
+HEADER
+======================================= */
+.header-container {
+  position: fixed;
+  top: 0;
+  right: 34%;
+  left: 32%;
+  z-index: 20;
+  display: flex;
+  filter: var(--hard-light-color);
+}
+
+.main-header {
+  width: 100%;
+  background-color: var(--primary-color-variant);
+  text-align: center;
+  padding: 2% 0 1% 0;
+  clip-path: polygon(0% 0%, 100% 0%, 91% 100%, 8% 100%);
+}
+
+.logo-header {
+  width: 25%;
+  height: auto;
+}
+
+.header-arrow {
+  display: inline-block;
+  width: 5%;
+  background-color: var(--primary-color-variant);
+  z-index: -1;
+  transform-origin: center center;
+  margin-bottom: 3%;
+  opacity: 0.2;
+}
+
+.header-arrow-right {
+  transform: skewX(-325deg) translateX(24%) scaleX(3);
+  -ms-transform: skewX(-325deg) translateX(24%) scaleX(3);
+  -webkit-transform: skewX(-325deg) translateX(24%) scaleX(3);
+}
+
+.header-arrow-left {
+  transform: skewX(322deg) translateX(-30%) scaleX(3);
+  -ms-transform: skewX(322deg) translateX(-30%) scaleX(3);
+  -webkit-transform: skewX(322deg) translateX(-30%) scaleX(3);
+}
+
+/* =======================================
+FOOTER
+======================================= */
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  right: 28%;
+  left: 28%;
+  z-index: 20;
+  display: flex;
+  filter: var(--hard-light-color);
+}
+
+.main-footer {
+  width: 100%;
+  background-color: var(--primary-color-variant);
+  text-align: center;
+  padding: 3% 0 2% 0;
+  clip-path: polygon(9% 0%, 91% 0%, 100% 100%, 0% 100%);
+}
+.footer-container:before {
+  content: "";
+  position: absolute;
+}
+
+.main-footer p {
+  font-size: 0.7em;
+  padding-bottom: 0.3em;
+}
+
+.main-footer a {
+  color: black;
+}
+
+.footer-arrow {
+  display: inline-block;
+  width: 5%;
+  background-color: var(--primary-color-variant);
+  z-index: -1;
+  transform-origin: center center;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  opacity: 0.2;
+}
+
+.footer-arrow-right {
+  transform: skewX(315deg) translateX(28%) scaleX(3);
+  -ms-transform: skewX(315deg) translateX(28%) scaleX(3);
+  -webkit-transform: skewX(315deg) translateX(28%) scaleX(3);
+}
+
+.footer-arrow-left {
+  transform: skewX(-315eg) translateX(-30%) scaleX(3);
+  -ms-transform: skewX(-315deg) translateX(-30%) scaleX(3);
+  -webkit-transform: skewX(-315deg) translateX(-30%) scaleX(3);
+}

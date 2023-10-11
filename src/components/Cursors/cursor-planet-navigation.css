@@ -1,0 +1,42 @@
+/* =======================================
+CURSOR
+======================================= */
+
+html, body{
+    cursor: none;
+}
+
+.cursor{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--light-color);
+    z-index: 99999;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    box-shadow: rgb(245, 173, 49) 0px 0px 8px;
+    filter: var(--hard-light-color);
+}
+.cursor-sub{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fea500;
+    z-index: 99998;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    filter: var(--hard-light-color);
+    background-color: rgba(245, 173, 49, 0);
+}
+.cursor-sub-dark{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 99997;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+}

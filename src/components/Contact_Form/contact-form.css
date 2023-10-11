@@ -1,0 +1,140 @@
+/* =======================================
+CONTACT FORM
+======================================= */
+
+/* Stile dei campi */
+form label {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+form .input-field {
+  width: 100%;
+  padding: 0.5em 1em;
+  background-color: #372644;
+  border-bottom: 1px solid #ffffff7a;
+  border-right: 1px solid #ffffff7a;
+  border-top: 0px solid #ffffff7a;
+  border-left: 0px solid #ffffff7a;
+  transition: 0.4s ease-in-out;
+  color: #00df4c;
+  text-shadow: 0px 0px 6px #00df4c9c;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+}
+form textarea {
+  width: 100%;
+  min-height: 10vh;
+  padding: 0.5em 1em;
+  background-color: #372644;
+  border-bottom: 1px solid #ffffff7a;
+  border-right: 1px solid #ffffff7a;
+  border-top: 0px solid #ffffff7a;
+  border-left: 0px solid #ffffff7a;
+  transition: 0.4s ease-in-out;
+  color: #00df4c;
+  text-shadow: 0px 0px 6px #00df4c9c;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+}
+
+/* Struttura */
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-col-12 {
+  margin-bottom: 1em;
+  width: 100%;
+}
+.form-col-6 {
+  margin-bottom: 1em;
+  width: 49%;
+}
+
+/* Form Field */
+form input:focus,
+form input:focus-visible,
+form textarea:focus,
+form textarea:focus-visible {
+  outline: 0;
+  border-color: #f5a214;
+  background-color: #1d0d29;
+  transition: 0.4s ease-in-out;
+}
+.privacy-col span {
+  color: white;
+  font-size: 0.7em;
+  font-family: "Source Code Pro", monospace;
+  padding-left: 1em;
+}
+.privacy-col span a {
+  color: #f5a214;
+}
+form p{
+    padding: 1em;
+    font-size: 0.8em;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1em;
+  }
+
+/* Pulsante invio */
+.input-button {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0% calc(100% - 10px)
+  );
+  padding: 1em 10%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+  display: inline-block;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.5em;
+  text-decoration: none;
+  color: black;
+  border-style: double;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-top-color: white;
+  border-left-color: white;
+  letter-spacing: 3px;
+}
+
+.input-button:hover {
+  background-color: #fea500;
+  border-top-color: #fea500;
+  border-left-color: #fea500;
+  border-bottom-color: black;
+  border-right-color: black;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+/* =======================================
+MEDIA QUERY
+======================================= */
+
+@media (max-width: 801px) {
+  .page-col-8, .page-col-4, .input-button, .form-col-6 {
+    width: 100%;
+  }
+  .flex-form{
+    margin-bottom: 60px;
+  }
+  .form-col-12 {
+    margin-bottom: 1.5em;
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Tirocinio Laurea Triennale",
+      "ente": "Yep Design Studio",
+      "content": "Ho avuto modo di osservare e apprendere da vicino la metodologia di approccio al progetto fatta da dei professionisti, interfacciandomi con lavori di grafica, interni e prodotto",
+      "year": "dicembre 2016 / febbraio 2017"
+    },
+    {
+      "id": 2,
+      "title": "Web Designer",
+      "ente": "SwitchSportExperience",
+      "content": "creazione del sito SwitchSportExperience, una start-up innovativa con lo scopo di creale un portale di riferimento per le attività sportive con base principalmente in toscana.",
+      "year": "settembre 2018 / dicembre 2019"
+    },
+    {
+      "id": 3,
+      "title": "Web Designer",
+      "ente": "MaxMile - Firenze",
+      "content": "Sviluppo e costruzione di siti internet mediante la piattaforma Wordpress, inserimento dati su sistemi gestionali, gestione di newsletter e creazione di grafiche e materiale per web",
+      "year": "aprile 2019 / marzo 2021"
+    },
+    {
+      "id": 4,
+      "title": "Web Designer",
+      "ente": "Ragou - Collaborazione",
+      "content": "Collaborazione con il team di Ragou Design, con l'obbiettivo di offrire una proposta progettuale completa, integrando discipline differenti e complementari.",
+      "year": "marzo 2021 / settembre 2023"
+    },
+    {
+      "id": 5,
+      "title": "Insegnate Part-time",
+      "ente": "Accademia Nemo",
+      "content": "Attività di insegnate nel corso di Web Graphic Design dell'accademia, tenendo lezioni sulla base del codice html e css e sull'utilizzo di software per la progettazione",
+      "year": "ottobre 2021 / in corso"
+    },
+    {
+      "id": 6,
+      "title": "Web Designer",
+      "ente": "Libero Professionista",
+      "content": "A seguito dell'esperienza presso la Web Agency Max Mile srl ho deciso di intraprendere la carriera da libero professionista, sempre nell'ambito del Web Design",
+      "year": "marzo 2021 / in corso"
+    }
+  ]

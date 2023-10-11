@@ -1,0 +1,32 @@
+/* =======================================
+ABOUT PAGE
+======================================= */
+
+/* Stile generale */
+.col-right {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.heading-container-line {
+  height: 1px;
+  width: 100%;
+  background-color: hsla(0, 0%, 85%, 0.3);
+  box-shadow: 0px 0px 8px #ffffff7a;
+  margin-bottom: 2em;
+}
+
+.content-container {
+  height: 30vh;
+  overflow: hidden;
+}

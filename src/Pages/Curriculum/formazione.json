@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "title": "Laurea Triennale in Disegno Industriale",
+      "ente": "Università degli Studi di Firenze",
+      "content": "Conseguita con la votazione di 110/110 con lode all'Università degli Studi di Firenze, mi sono approcciato allo studio di graphic, interior e product design.",
+      "year": "2013 / 2017"
+    },
+    {
+      "id": 2,
+      "title": "Corso in Web Graphic Design",
+      "ente": "Accademia Nemo",
+      "content": "Percorso di post-lauream che mi ha permesso di specializzarmi nella disciplina del Web Design, attraverso lo studio della teoria e della pratica della costruzione di siti web.",
+      "year": "2017 / 2019"
+    }
+  ]

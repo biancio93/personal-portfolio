@@ -1,0 +1,42 @@
+/* =======================================
+PLANET INFO
+======================================= */
+
+.planet-info-container{
+    pointer-events: none;
+    text-align: center;
+}
+.p-max{
+    padding-bottom: 20vh;
+}
+.p-min{
+    padding-bottom: 5vh;
+}
+.planet-info-name{
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    color: #fea500;
+}
+.planet-distance{
+    color:white;
+    font-size: 0.8em;
+    width: 300px;
+}
+.landing-invoice{
+    color: black;
+    font-size: 0.8em;
+    background-color: #fea500;
+    width: 170px;
+    font-weight: 400;
+    padding: 0.5em 0;
+    margin-top: 0.5em;
+}
+.landing-icon-yes{
+    fill: #00DF4C;
+    color: #00DF4C;
+}
+.landing-icon-not{
+    fill: #534062;
+    color: #534062;
+}

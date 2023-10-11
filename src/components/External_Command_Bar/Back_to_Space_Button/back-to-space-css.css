@@ -1,0 +1,48 @@
+/* =======================================
+Back to Space Button
+======================================= */
+.space-button {
+    position: fixed;
+    bottom: calc(11.5vw);
+    left: 14px;
+    z-index: 9999;
+    height: 6vw;
+    width: 6vw;
+    border: 0;
+    border-radius: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8vw;
+    font-size: 0.7em;
+    max-width: 85px;
+    max-height: 85px;
+    text-align: center;
+    color: white;
+    background-color: var(--background-control-color);
+    box-shadow: 0px 0px 120px var(--soft-shadow-color);
+    text-decoration: none;
+    font-family: sans-serif;
+    z-index: 11;
+    cursor: pointer;
+  }
+  
+  .space-button:hover {
+    background-color: var(--light-color);
+  }
+  .space-button:hover span{
+    color: var(--primary-color-variant);
+  }
+  
+  .space-button svg {
+    font-size: 1.3vw;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color-variant);
+  }
+  
+  .space-button span{
+      color: #fff;
+      padding-top: 5px;
+    }

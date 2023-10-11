@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Movimento",
+      "description": "Utilizza i tasti WASD per muoverti nello spazio",
+      "video": "/VideoHelp/video-movimento.webm"
+    },
+    {
+      "id": 2,
+      "title": "Turbo",
+      "description": "Premi il tasto 'Q' per passare in modalità TURBO ed aumentare la velocità" ,
+      "video": "/VideoHelp/video-turbo.webm"
+    },
+    {
+      "id": 3,
+      "title": "Visuale",
+      "description": "Muovi il puntatore sullo schermo per guardarti attorno",
+      "video": "/VideoHelp/video-visuale.webm"
+    },
+    {
+        "id": 4,
+        "title": "Menu",
+        "description": "Premi il tasto 'E' sulla tastiera per aprire il menu, oppure clicca sul pulsante a sinistra",
+        "video": "/VideoHelp/video-main-menu.webm"
+      },
+    {
+        "id": 5,
+        "title": "Reset",
+        "description": "Ti sei perso? Premi la barra spaziatrice per resettare la posizione",
+        "video": "/VideoHelp/video-reset.webm"
+    },
+    {
+      "id": 6,
+      "title": "Atterraggio",
+      "description": "Avvicinati ad un pianeta e, quando ricevi il segnale dai comandi di volo, clicca per atterrare",
+      "video": "/VideoHelp/video-menu.webm"
+    },
+    {
+      "id": 7,
+      "title": "Ti serve aiuto?",
+      "description": "Premi il tasto 'H' sulla tastiera per aprire il manuale, oppure clicca sul pulsante a destra",
+      "video": "/VideoHelp/video-help.webm"
+    }
+  ]

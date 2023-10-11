@@ -1,0 +1,75 @@
+/* =======================================
+PLANET ALERT
+======================================= */
+
+.message{
+  position: absolute;
+  bottom: 16vh;
+  right: 30%;
+  text-align: center;
+  padding: 0.5em;
+  left: 30%;
+  max-width: 500px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.alert-message {
+  background-color: #80738740;
+  border: 1px solid #807387;
+  z-index: 1;
+}
+.alert-message span{
+  color: white;
+  font-size: 0.7em;
+}
+.alert-message svg {
+  display: block;
+  margin: 0 auto;
+  fill: #e74e6d;
+}
+
+/* =======================================
+MEDIA QUERY
+======================================= */
+
+@media (max-width: 801px) {
+  .message {
+    bottom: 1vh;
+    right: 2%;
+    padding: 0.5em;
+    left: 2%;
+  }
+  .alert-message {
+    background-color: #3b2b44ed;
+  }
+  .message h3{
+    color: var(--primary-color-variant);
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  .message p{
+    font-size: 0.8em;
+    color: white;
+  }
+  .alert-message svg.landing-icon-yes{
+    fill: #00DF4C;
+    color: #00DF4C;
+  }
+  .alert-message svg.landing-icon-not {
+    fill: #e74e6d;
+    color: #e74e6d;
+  }
+  .alert-message span.button-alert{
+    color: #10040f;
+    font-size: 1em;
+    width: 1.6em;
+    height: 1.6em;
+    padding: 0.3em;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    background-color: white;
+  }
+}
+

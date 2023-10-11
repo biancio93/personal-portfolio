@@ -1,0 +1,210 @@
+/* =======================================
+MENU
+======================================= */
+.navigation-menu {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background-color: #00000033;
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.col-5 {
+  width: 35%;
+  padding-right: 8%;
+  text-align: center;
+}
+.col-7 {
+  width: 65%;
+  padding-left: 8%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-left: 1px solid #534062;
+  position: relative;
+}
+.separator-map:before,
+.separator-map:after {
+  content: "";
+  position: absolute;
+  width: 0.5vw;
+  height: 15vh;
+  background-color: #534062;
+  left: -0.5vw;
+}
+.separator-map:before {
+  bottom: 0;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+.separator-map:after {
+  top: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+/* =======================================
+MENU - LOGO
+======================================= */
+
+.logo-menu {
+  width: 60%;
+  height: auto;
+  margin-bottom: 2em;
+}
+.menu-intro {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #534062;
+}
+
+/* =======================================
+MENU - LINK
+======================================= */
+
+.navbar {
+  filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));
+}
+.menu-link {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+  padding: 1em 3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+  border-style: double;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-top-color: white;
+  border-left-color: white;
+  letter-spacing: 3px;
+}
+.menu-link.active {
+  background-color: #fea500;
+}
+.menu-link.inactive {
+  background-color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.menu-link.inactive:hover {
+  background-color: #fea500;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+/* =======================================
+MENU - HELP
+======================================= */
+
+.help-instruction-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.help-card {
+  background-color: #1d1127;
+  text-align: center;
+  padding: 1.5em;
+  border: 1px solid #534062;
+  width: 33%;
+  clip-path: polygon(
+    2vw 0,
+    100% 0,
+    100% calc(100% - 2vw),
+    calc(100% - 2vw) 100%,
+    0 100%,
+    0 2vw
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+.help-card video {
+  margin-bottom: 0.5em;
+  width: 100%;
+  clip-path: polygon(1.3vw 0, 100% 0, 100% 100%, 0 100%, 0 1.3vw);
+}
+.help-card h4 {
+  color: var(--primary-color-variant);
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+.help-card p {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+.help-card-image {
+  width: 40%;
+  height: auto;
+  padding-bottom: 1.5em;
+}
+.slide-counter {
+  position: absolute;
+  bottom: 15vh;
+  color: white;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
+}
+.slider-arrow {
+  position: absolute;
+  fill: var(--primary-color-variant);
+  top: 50%;
+  font-size: 2em;
+  height: 100px;
+  cursor: pointer;
+}
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.arrow-left {
+  left: 28%;
+}
+.arrow-right {
+  right: 28%;
+}
+
+/* =======================================
+STILE GENERALE
+======================================= */
+
+@media (max-width: 801px) {
+  .menu-link {
+    font-size: 2.5vw;
+  }
+}

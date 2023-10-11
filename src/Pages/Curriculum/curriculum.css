@@ -1,0 +1,564 @@
+/* =======================================
+CURRICULUM PAGE
+======================================= */
+
+/* Cover */
+.curriculum-cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 25vw;
+  background-color: #1d1127;
+  padding: 1em calc(60px + 1em) 1em calc(99px + 1em);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 40%,
+    calc(100% - 60px) calc(40% + 60px),
+    calc(100% - 60px) 100%,
+    0% 100%
+  );
+  z-index: 9;
+}
+
+.cover-border {
+  position: absolute;
+}
+.cover-border-line-1 {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 40%;
+  background-color: var(--gray-color);
+}
+.cover-border-line-2 {
+  top: calc(40% + 59px);
+  right: 60px;
+  width: 1px;
+  height: calc(100% - (40% + 59px));
+  background-color: var(--gray-color);
+}
+.cover-border-triangle {
+  top: calc(40% - 2px);
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 calc(61px) calc(61px);
+  border-color: transparent transparent var(--gray-color) transparent;
+}
+.cover-menu-container {
+  width: 100%;
+  height: 100%;
+}
+.top-section {
+  width: 100%;
+  height: calc(40% + 59px);
+}
+/* Cover image */
+.curriculum-image,
+.curriculum-image img {
+  width: 100%;
+}
+.curriculum-image img {
+  display: inherit;
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% calc(100% - 60px),
+    calc(100% - 60px) 100%,
+    0 100%
+  );
+}
+.curriculum-image {
+  background-color: var(--gray-color);
+  padding: 2px;
+  margin-bottom: 1em;
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% calc(100% - 60px),
+    calc(100% - 60px) 100%,
+    0 100%
+  );
+}
+.top-section h1,
+.section-title {
+  color: var(--primary-color-variant);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.top-section p,
+.section-heading p,
+.card-formazione .curriculum-card-body p,
+.card-skills .curriculum-card-body p {
+  font-size: 0.8em;
+  color: #978e9d;
+  display: flex;
+  align-items: flex-end;
+}
+.underline-curriculum {
+  height: 1px;
+  width: 100%;
+  background-color: #978e9d;
+}
+.web-curriculum {
+  white-space: nowrap;
+  padding-right: 0.8em;
+}
+.decoration-container {
+  padding: 0 0.5em;
+  top: -62px;
+  right: 0;
+  width: 61px;
+  display: inline-block;
+  position: absolute;
+  height: 50%;
+  transform: skewY(-45deg);
+  z-index: -1;
+}
+.decoration-big {
+  width: 100%;
+  height: 50%;
+  background-color: #281b33;
+  display: inline-block;
+  margin-bottom: 8%;
+}
+.decoration-small {
+  width: 100%;
+  height: 5%;
+  background-color: #281b33;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+/* Cover right */
+.curriculum-cover-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 6vw;
+  min-width: 90px;
+  background-color: #1d1127;
+  clip-path: polygon(
+    60px 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 50%,
+    60px calc(50% - 60px)
+  );
+  z-index: 1;
+}
+.cover-border-line-3 {
+  top: 0;
+  left: 60px;
+  width: 1px;
+  height: calc(50% - 60px);
+  background-color: var(--gray-color);
+}
+.cover-border-triangle-left {
+  top: calc(50% - 60px);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: calc(61px) calc(61px) 0 0;
+  border-color: var(--gray-color) transparent transparent transparent;
+}
+.cover-border-line-4 {
+  top: 50%;
+  left: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: var(--gray-color);
+}
+.arrow-container,
+.back-to-top {
+  position: fixed;
+  bottom: 15%;
+  right: 3vw;
+  width: 6vw;
+  z-index: 1;
+  filter: var(--hard-light-color);
+  z-index: 2;
+}
+.back-to-top {
+  background-color: var(--primary-color-variant);
+  color: #492909;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+}
+.arrow-curriculum {
+  background-color: var(--primary-color-variant);
+  height: 47px;
+  width: 100%;
+  display: inline-block;
+  clip-path: polygon(0 0, 50% 40px, 100% 0, 100% 7px, 50% 47px, 0 7px);
+  margin-top: -27px;
+  opacity: 0.3;
+}
+
+/* Section */
+.container-curriculum {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.section-curriculum {
+  height: 100vh;
+  width: 100%;
+  padding: 10vh 14vw 10vh 30vw;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+.section-heading {
+  margin-bottom: 3em;
+}
+.row-curriculum {
+  width: 100%;
+}
+.underline-curriculum-body {
+  height: 1px;
+  width: 100%;
+  background-color: #281b33;
+}
+.number-section {
+  white-space: nowrap;
+  padding-left: 0.8em;
+  text-align: right;
+  color: var(--primary-color-variant);
+  background-color: #140424;
+  outline: #140424 solid 10px;
+}
+.section-body-content {
+  color: #b1a0bf;
+  font-size: 0.8em;
+  line-height: 1.7;
+  column-count: 2;
+  column-gap: 5%;
+}
+.section-body-content::selection {
+  background-color: var(--primary-color-variant);
+  color: #000000;
+  text-shadow: none;
+}
+.section-body-content strong,
+.section-body-content em {
+  font-size: 1.2em;
+  color: var(--light-color);
+}
+.section-body-content a {
+  font-size: 1.2em;
+  color: var(--primary-color-variant);
+  border-bottom: 1px solid;
+}
+.curriculum-card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.curriculum-card-title {
+  color: var(--primary-color-variant);
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.card-formazione.curriculum-card,
+.curriculum-card.card-skills {
+  width: 48%;
+  margin-right: 4%;
+  position: relative;
+}
+.card-esperienze.curriculum-card {
+  width: 30%;
+  margin-right: 5%;
+}
+.card-formazione.curriculum-card:nth-child(2),
+.curriculum-card.card-skills:nth-child(2) {
+  margin-right: 0%;
+}
+.card-esperienze.curriculum-card:nth-child(3n) {
+  margin-right: 0%;
+}
+
+.curriculum-card .web-curriculum {
+  margin-bottom: 2em;
+  color: var(--light-color);
+}
+.card-formazione .curriculum-card-body {
+  background-color: #1d1127;
+  padding: 1.5em;
+  clip-path: polygon(
+    15px 0,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0 15px
+  );
+  border-left: 1px solid var(--primary-color-variant);
+  border-bottom: 1px solid var(--primary-color-variant);
+}
+.card-skills .curriculum-card-body {
+  background-color: #1d1127;
+  padding: 1.5em 1.5em 1.5em 3em;
+  border-left: 1px solid var(--primary-color-variant);
+  border-bottom: 1px solid var(--primary-color-variant);
+  height: 100%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 2em),
+    calc(100% - 2em) 100%,
+    0 100%
+  );
+}
+.card-skills .curriculum-card-body::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 calc(41px) calc(41px);
+  border-color: transparent transparent var(--primary-color-variant) transparent;
+}
+.card-esperienze .curriculum-card-body {
+  margin-bottom: 3em;
+  border-bottom: 1px solid #281b33;
+}
+.card-paragraph {
+  line-height: 1.7;
+}
+.curriculum-card-year {
+  display: inline-block;
+  background-color: var(--primary-color-variant);
+  padding: 0.2em 20% 0.2em 1.5em;
+  font-size: 0.8em;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+}
+.card-esperienze .curriculum-card-body p {
+  font-size: 0.7em;
+  color: #978e9d;
+}
+.curriculum-card-body p.subtitle-esperienze {
+  color: var(--light-color);
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+.card-esperienze .curriculum-card-body p.curriculum-card-year-2 {
+  color: var(--primary-color-variant);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.skills-card-title {
+  display: inline-block;
+  background-color: var(--primary-color-variant);
+  font-size: 0.8em;
+  /*clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);*/
+}
+.skills-card-title {
+  position: absolute;
+  z-index: 2;
+  transform-origin: left top;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  padding: 0.2em 3em 0.2em 1em;
+  letter-spacing: 0.3em;
+  color: #492909;
+  font-size: 0.6em;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.skills-logo-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.skills-logo-container img {
+  width: 23%;
+  padding: 1%;
+}
+.curriculum-card.card-skills {
+  margin-bottom: 1em;
+}
+.page-row-curriculum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 0 0 0%;
+}
+.cover-menu-container .bottom-section {
+  height: calc(100% - 40% - 59px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cover-menu-container .bottom-section a {
+  font-family: "Michroma", sans-serif;
+  text-decoration: none;
+  color: var(--light-color);
+  padding: 0.5em 0;
+  font-size: 0.8em;
+  display: inline-block;
+  width: 100%;
+}
+.cover-menu-container .bottom-section .active a {
+  color: var(--primary-color-variant);
+  filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));
+}
+.bottom-section ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+.cover-menu-container .bottom-section .download-button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+  border-style: double;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-top-color: var(--light-color);
+  border-left-color: var(--light-color);
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  padding: 0.5em 0;
+  clip-path: polygon(
+    0 10px,
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+  background-color: var(--light-color);
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.cover-menu-container .bottom-section .download-button:hover {
+  background-color: var(--primary-color);
+  transition: 0.4s ease-in-out;
+}
+.button-container {
+  filter: drop-shadow(0px 0px 5px hsl(0, 0%, 50%));
+}
+
+.menu-timeline-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px 5px 0;
+  border-color: transparent var(--primary-color-variant) transparent transparent;
+  right: 0;
+  top: 0;
+  margin: 0.8em 0;
+}
+.menu-timeline-border {
+  border-right: 1px solid #534062;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1em;
+}
+.curriculum-decoration {
+  position: absolute;
+  right: calc(15vw - 1em);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+/* =======================================
+MEDIA QUERY
+======================================= */
+@media (max-width: 801px) {
+  .container-curriculum {
+    position: fixed;
+    left: 11.5vw;
+    right: 4.5vw;
+    top: 4.5vw;
+    border: 1px solid #330f37;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .section-curriculum {
+    padding: 10vh 5vw;
+    height: auto;
+  }
+  .section-body-content {
+    column-count: 1;
+  }
+  .card-formazione.curriculum-card,
+  .curriculum-card.card-skills {
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: 10%;
+  }
+  .section-curriculum {
+    scroll-snap-align: none;
+  }
+  .card-esperienze.curriculum-card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .page-row-curriculum {
+    flex-wrap: wrap;
+  }
+  .curriculum-card-body .web-curriculum {
+    white-space: inherit;
+    padding-right: 0em;
+  }
+  .top-section {
+    height: auto;
+    padding: 5vh 5vw;
+    background-color: #261a31;
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% calc(100% - 60px),
+      calc(100% - 60px) 100%,
+      0 100%
+    );
+  }
+  .mobile-footer{
+    padding: 5vh 5vw;
+  }
+  .mobile-footer p{
+    color: var(--light-color);
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    text-align: right;
+  }
+  .mobile-footer p a{
+    color: var(--primary-color-variant);
+  }
+}
